@@ -1,10 +1,12 @@
 package com.cognizant.truyum.dao;
 
-public class CartEmptyException {
+import java.util.*;
+@SuppressWarnings("serial")
+public class CartEmptyException extends Exception{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public CartEmptyException()
+	{
+		super();
+		System.out.println("cart is empty");
 	}
-
 }
